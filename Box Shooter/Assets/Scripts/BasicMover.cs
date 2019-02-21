@@ -8,6 +8,6 @@ public class BasicMover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+      gameObject.transform.Rotate(Vector3.up * spinSpeed * Time.deltaTime);
     }
 }
