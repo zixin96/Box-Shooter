@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicMover : MonoBehaviour
+public class BasicController : MonoBehaviour
 {
-    public float spinSpeed = 180.0f;
+    
     // Update is called once per frame
     void Update()
     {
-      gameObject.transform.Rotate(Vector3.up * spinSpeed * Time.deltaTime);
+        Debug.Log("Horizontal Input = " + Input.GetAxis("Horizontal"));
     }
 }
