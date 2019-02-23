@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour {
 				EndGame ();
 			} else { // game playing state, so update the timer
 				currentTime -= Time.deltaTime;
-				mainTimerDisplay.text = currentTime.ToString ("0.00");				
+				mainTimerDisplay.text = currentTime.ToString ("0.00");	//Fromat currentTime to X.XX			
 			}
 		}
 	}
