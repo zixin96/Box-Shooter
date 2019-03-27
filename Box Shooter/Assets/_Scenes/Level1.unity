@@ -1248,7 +1248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   canBeatLevel: 1
-  beatLevelScore: 15
+  beatLevelScore: 50
   startTime: 15
   mainScoreDisplay: {fileID: 1919122731}
   mainTimerDisplay: {fileID: 1106515440}
