@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour
 {
-    void OnControllerColliderHit(ControllerColliderHit hit)
+    // respond on collisions
+    void OnCollisionEnter(Collision newCollision)
     {
-        if (hit.transform.tag == "Respawn")
+        // only do stuff if hit by a projectile
+        if (newCollision.gameObject.tag == "Player")
         {
+            // call the RestartGame function in the game manager
             GameManager.gm.RestartGame();
         }
     }
-    
-    
+
 }
