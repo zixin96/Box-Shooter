@@ -4,7 +4,7 @@ using System.Collections;
 public class TargetMover : MonoBehaviour {
 
 	// define the possible states through an enumeration
-	public enum motionDirections {Spin, Horizontal, Vertical, Circular, Diagonal};
+	public enum motionDirections {Spin, Horizontal, Vertical, CircularSpin, Diagonal};
 	
 	// store the state
 	public motionDirections motionState = motionDirections.Horizontal;
@@ -43,12 +43,13 @@ public class TargetMover : MonoBehaviour {
                 break;
 
 
-            case motionDirections.Circular:
+            case motionDirections.CircularSpin:
                 circularSpeed = (2.0f * Mathf.PI) / timeToCompleteCircle;
                 angle += circularSpeed * Time.deltaTime;
                 x = radius * Mathf.Cos(angle);
                 y = radius * Mathf.Sin(angle);
                 gameObject.transform.position = new Vector3(x, y, gameObject.transform.position.z);
+                gameObject.transform.Rotate(Vector3.up * spinSpeed * Time.deltaTime);
                 break;
 
             case motionDirections.Diagonal:

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 33286249900248082}
   - component: {fileID: 23042128193937694}
   - component: {fileID: 3144136819041763983}
+  - component: {fileID: 1752568884}
+  - component: {fileID: 1157981464819430861}
   m_Layer: 0
   m_Name: Pref_Ch_Bot
   m_TagString: Untagged
@@ -91,6 +93,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.675645, y: 0.31976312, z: 0.450166}
   m_Center: {x: 0, y: 0.15987867, z: -0.000000022351742}
+--- !u!114 &1752568884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545548694612056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a926d2dbaf347e29cb9c7dc7bf85da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 3
+  timeAmount: 0
+  explosionPrefab: {fileID: 384740140163303116, guid: b2afdec4e3ff3394d9e09663916d2930,
+    type: 3}
+--- !u!95 &1157981464819430861
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545548694612056}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61cb1a67656c2e445940cf34911de7c7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1585919439599944
 GameObject:
   m_ObjectHideFlags: 0
@@ -103,6 +140,8 @@ GameObject:
   - component: {fileID: 33729802932981448}
   - component: {fileID: 23200655670213762}
   - component: {fileID: 7144996343673485477}
+  - component: {fileID: 814769191}
+  - component: {fileID: 3477494510442581802}
   m_Layer: 0
   m_Name: Pref_Ch_Top
   m_TagString: Untagged
@@ -182,6 +221,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.675645, y: 0.21982469, z: 0.45016602}
   m_Center: {x: 0, y: 0.10991239, z: 0.22508301}
+--- !u!114 &814769191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585919439599944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20a926d2dbaf347e29cb9c7dc7bf85da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreAmount: 7
+  timeAmount: 0
+  explosionPrefab: {fileID: 384740140163303116, guid: b2afdec4e3ff3394d9e09663916d2930,
+    type: 3}
+--- !u!95 &3477494510442581802
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585919439599944}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61cb1a67656c2e445940cf34911de7c7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1587478129024764
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,6 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4409965333351644}
   - component: {fileID: 5739720604599256198}
+  - component: {fileID: 5215225042256355604}
   m_Layer: 0
   m_Name: Target-ChestBox
   m_TagString: Untagged
@@ -208,7 +283,7 @@ Transform:
   m_GameObject: {fileID: 1587478129024764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 4440877694918636}
   - {fileID: 4600341253775356}
@@ -227,8 +302,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f42b8ec115b54b858bf87bc1cbc3892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motionState: 1
+  motionState: 4
   spinSpeed: 180
   motionMagnitude: 0.1
   timeToCompleteCircle: 5
   radius: 5
+--- !u!114 &5215225042256355604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587478129024764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47af3168550784e3a932e53789748764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exitAfterSeconds: 10
+  exitAnimationSeconds: 1

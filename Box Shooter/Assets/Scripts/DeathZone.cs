@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour
 {
-    // DeathZone will restart the game upon collision
-    void OnCollisionEnter(Collision newCollision)
+    void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        
-        if (newCollision.gameObject.tag == "Player")
+        if (hit.transform.tag == "Respawn")
         {
-            // call the RestartGame function in the game manager
             GameManager.gm.RestartGame();
         }
     }
+    
+    
 }
