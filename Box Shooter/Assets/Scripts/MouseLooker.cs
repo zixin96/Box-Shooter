@@ -50,7 +50,7 @@ public class MouseLooker : MonoBehaviour {
 	
 	private void LockCursor(bool isLocked)
 	{
-		if (isLocked) 
+		if (isLocked) // If you want to lock the cursor
 		{
 			// make the mouse pointer invisible
 			Cursor.visible = false;

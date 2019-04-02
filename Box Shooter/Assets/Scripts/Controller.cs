@@ -13,7 +13,7 @@ public class Controller : MonoBehaviour {
 	void Start () {
 		// store a reference to the CharacterController component on this gameObject
 		// it is much more efficient to use GetComponent() once in Start and store
-		// the result rather than continually use etComponent() in the Update function
+		// the result rather than continually use GetComponent() in the Update function
 		myController = gameObject.GetComponent<CharacterController>();
 	}
 	

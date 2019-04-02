@@ -913,9 +913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf81ce52bea74e6bb1edf7dd3f6fc21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 5207399458338801208, guid: 6e5adb3f69bce3b4e8985da673c16177,
-    type: 3}
-  power: 200
+  projectile: {fileID: 1707102027251842, guid: dfb85277a4a133d45bc2d5f31d82309c, type: 3}
+  power: 10
   shootSFX: {fileID: 8300000, guid: e3f263227cf24b546afcad82fbf96159, type: 3}
 --- !u!1001 &378568653
 PrefabInstance:
@@ -5625,16 +5624,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8354678382807970440, guid: 679ba1a946a534543a52b1e0a7a00b0e,
-        type: 3}
-      propertyPath: m_CustomSkybox
-      value: 
-      objectReference: {fileID: 2100000, guid: 793d169660c524c4984a094547e3f835, type: 2}
     - target: {fileID: 8354678383025091643, guid: 679ba1a946a534543a52b1e0a7a00b0e,
         type: 3}
       propertyPath: moveSpeed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8354678382807970440, guid: 679ba1a946a534543a52b1e0a7a00b0e,
+        type: 3}
+      propertyPath: m_CustomSkybox
+      value: 
+      objectReference: {fileID: 2100000, guid: 793d169660c524c4984a094547e3f835, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679ba1a946a534543a52b1e0a7a00b0e, type: 3}
 --- !u!1001 &8712072392661575185
