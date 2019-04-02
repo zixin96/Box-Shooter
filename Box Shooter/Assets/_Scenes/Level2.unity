@@ -2497,7 +2497,7 @@ MonoBehaviour:
   score: 0
   canBeatLevel: 1
   beatLevelScore: 100
-  startTime: 15
+  startTime: 30
   mainScoreDisplay: {fileID: 1919122731}
   mainTimerDisplay: {fileID: 1106515440}
   gameOverScoreOutline: {fileID: 1561305165}
