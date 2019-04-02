@@ -1,6 +1,6 @@
 # Box Shooter, Welcome to the Inferno
 
-This is a first person shooter game consisting of two distinct levels: Tronish New World and Inferno.
+This is a first person shooter game consisting of two distinct levels: Tronish Maze and Inferno.
 
 ## Demo
 
@@ -10,7 +10,7 @@ This is a first person shooter game consisting of two distinct levels: Tronish N
 
 ### Theme and Setting
 
-* Level 1: You are in a strange and Tronish world where you must collect 50 points to move on to the next level.
+* Level 1: You are in a Tronish Maze where you must solve the maze under 35 seconds and collect 50 points to move on to the next level. 
 * Level 2: You are scorched by the heat from the Inferno where you must collect 100 points to escape.
 
 ### Gameplay Mechanics Brief
@@ -22,7 +22,8 @@ This is a first person shooter game consisting of two distinct levels: Tronish N
 
 ### Hints
 
-In level2, getting higher may give your an advantage :).
+* Level 1: Look for spinning diamonds! 
+* Level 2: Getting higher will give you a better shooting position. 
 
 ## Built With
 
