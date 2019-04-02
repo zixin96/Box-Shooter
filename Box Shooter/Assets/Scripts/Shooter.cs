@@ -19,7 +19,7 @@ public class Shooter : MonoBehaviour {
 			if (projectile)
 			{
 				// Instantiante projectile at the camera + 1 meter forward with camera rotation
-				GameObject newProjectile = Instantiate(projectile, transform.position + transform.forward, transform.rotation) as GameObject;
+				GameObject newProjectile = Instantiate(projectile, transform.position + transform.forward * 5, transform.rotation) as GameObject;
 
 				// if the projectile does not have a rigidbody component, add one
 				if (!newProjectile.GetComponent<Rigidbody>()) 
